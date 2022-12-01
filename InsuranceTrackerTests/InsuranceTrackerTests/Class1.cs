@@ -32,7 +32,7 @@ public class InsuranceTrackerTest
 
     string baseURL = "http://localhost/prog8170a04/";
     [Test]
-    public void insuranceTrackerage25DExp3accidents0()
+    public void insuranceTracker_age25_DExp3_accidents0()
     {
         //Arrabge
         driver.Navigate().GoToUrl(baseURL);
@@ -64,7 +64,7 @@ public class InsuranceTrackerTest
         }
     }
     [Test]
-    public void insuranceTrackerDrivingExperiencemorethanage()
+    public void insuranceTracker_DrivingExperience_more_than_age()
     {   
         //Arrange
         driver.Navigate().GoToUrl(baseURL);
@@ -95,7 +95,7 @@ public class InsuranceTrackerTest
         }
     }
     [Test]
-    public void insuranceTrackerNegativenumberinDrivingExperience()
+    public void insuranceTracker_Negativenumber_in_DrivingExperience()
     {   
 
         //Arrange
@@ -124,7 +124,7 @@ public class InsuranceTrackerTest
         Assert.That(driver.FindElement(By.Id("experience-error")).Text, Is.EqualTo("Please enter a value greater than or equal to 0."));
     }
     [Test]
-    public void insuranceTrackerage25DExp3accidents4()
+    public void insuranceTracker_age25_DExp3_accidents4()
     {   
 
         //Arrange
@@ -157,7 +157,7 @@ public class InsuranceTrackerTest
         }
     }
     [Test]
-    public void insuranceTrackerage27DExp3accidents0()
+    public void insuranceTracker_age27_DExp3_accidents0()
     {   
         //Arrange
         driver.Navigate().GoToUrl(baseURL);
@@ -186,7 +186,7 @@ public class InsuranceTrackerTest
         Assert.That(driver.FindElement(By.Id("phone-error")).Text, Is.EqualTo("Phone Number must follow the patterns 111-111-1111 or (111)111-1111"));
     }
     [Test]
-    public void insuranceTrackerage28DExp3accidents0InvalidEmail()
+    public void insuranceTracker_age28_DExp3_accidents0_InvalidEmail()
     {   
         //Arrange
         driver.Navigate().GoToUrl(baseURL);
@@ -212,7 +212,7 @@ public class InsuranceTrackerTest
         Assert.That(driver.FindElement(By.Id("email-error")).Text, Is.EqualTo("Must be a valid email address"));
     }
     [Test]
-    public void insuranceTrackerage35DExp10accidents2()
+    public void insuranceTracker_age35_DExp10_accidents2()
     {   
         //Arrange
         driver.Navigate().GoToUrl(baseURL);
@@ -245,7 +245,7 @@ public class InsuranceTrackerTest
         }
     }
     [Test]
-    public void insuranceTrackerage35DExp17accidents1InvalidPostal()
+    public void insuranceTracker_age35_DExp17_accidents1_InvalidPostal()
     {   
         //Arrange
         driver.Navigate().GoToUrl(baseURL);
@@ -270,7 +270,7 @@ public class InsuranceTrackerTest
         Assert.That(driver.FindElement(By.Id("postalCode-error")).Text, Is.EqualTo("Postal Code must follow the pattern A1A 1A1"));
     }
     [Test]
-    public void insuranceTrackerage37DExp8accidentsOmmited()
+    public void insuranceTracker_age37_DExp8_accidentsOmmited()
     {   
         //Arrange
         driver.Navigate().GoToUrl(baseURL);
@@ -295,7 +295,7 @@ public class InsuranceTrackerTest
         Assert.That(driver.FindElement(By.Id("accidents-error")).Text, Is.EqualTo("Number of accidents is required"));
     }
     [Test]
-    public void insuranceTrackerage45DExpOmittedaccidents0()
+    public void insuranceTracker_age45_DExpOmitted_accidents0()
     {   
         //Arrange
         driver.Navigate().GoToUrl(baseURL);
@@ -319,7 +319,7 @@ public class InsuranceTrackerTest
         Assert.That(driver.FindElement(By.Id("experience-error")).Text, Is.EqualTo("Years of experience is required"));
     }
     [Test]
-    public void insuranceTrackerage72DExp3accidents10()
+    public void insuranceTracker_age72_DExp3_accidents10()
     {   
         //Arrange
         driver.Navigate().GoToUrl(baseURL);
@@ -349,7 +349,7 @@ public class InsuranceTrackerTest
         }
     }
     [Test]
-    public void insuranceTrackerageOmittedDExp5accidents0()
+    public void insuranceTracker_ageOmitted_DExp5_accidents0()
     { 
         //Arrange
         driver.Navigate().GoToUrl(baseURL);
@@ -373,7 +373,7 @@ public class InsuranceTrackerTest
         Assert.That(driver.FindElement(By.Id("age-error")).Text, Is.EqualTo("Age (>=16) is required"));
     }
     [Test]
-    public void insuranceTrackeragelessthan16()
+    public void insuranceTracker_agelessthan16()
     {   
         //Arrange
         driver.Navigate().GoToUrl(baseURL);
@@ -399,7 +399,7 @@ public class InsuranceTrackerTest
         Assert.That(driver.FindElement(By.Id("age-error")).Text, Is.EqualTo("Please enter a value greater than or equal to 16."));
     }
     [Test]
-    public void insuranceTrackerdifferencebetweenageandexperiencegreaterthanorequalto16()
+    public void insuranceTracker_differencebetween_ageandexperience_greaterthanorequalto16()
     { 
         //Arrange
         driver.Navigate().GoToUrl(baseURL);
@@ -433,7 +433,7 @@ public class InsuranceTrackerTest
         }
     }
     [Test]
-    public void insuranceTrackerage25DExp0accidents0Output4000()
+    public void insuranceTracker_age25_DExp0_accidents0_Output4000()
     {
         //Arrange
         driver.Navigate().GoToUrl(baseURL);
